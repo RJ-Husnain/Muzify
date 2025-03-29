@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muzify -- Listen to your Faviourte Music here</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar flex">
+        <!-- logo section -->
+        <div class="logo">
+            <a href="">
+                <img src="logo.png" alt="Muzify" id="logo" />
+            </a>
+        </div>
+        <!-- Home Icon and Search bar -->
+        <div class="home flex">
+            <div class="icon">
+                
+                <img src="home.svg" alt="" />
+            </div>
+            <div class="search flex">
+                <input type="text" name="inputSearch" id="input" placeholder="What do you want to Play?" />
+                <img src="search.svg" alt="Search" id="search" />
+            </div>
+            <!-- hamburger -->
+            <div class="hamburgerDiv">
+                <img src="hambuger.svg" alt="Hamburger" id="hamburger" />
+            </div>
+        </div>
+        <!-- Signup and login button -->
+        <div class="buttons flex">
+            <button class="loginBtn">Login</button>
+            <button class="signupBtn">Signup</button>
+        </div>
+    </nav>
+    <!-- Signup $ login Box -->
+    <div class="listBox hidden">
+        <ul>
+            <li>Login</li>
+            <li>Sign up</li>
+        </ul>
+    </div>
+    <!-- Container -->
+    <div class="container flex">
+        <!-- left Div -->
+        <div class="leftBox flex">
+            <!-- Navigation Box -->
+            <img src="close.svg" alt="Close" id="close" />
+            <div class="navigation">
+                <a href="">
+                    <div class="flex navigationDiv">
+                        <img src="home.svg" alt="" />
+                        <p>Home</p>
+                    </div>
+                </a>
+                <div class="flex navigationDiv">
+                    <img src="search.svg" alt="" />
+                    <p>Search</p>
+                </div>
+            </div>
+            <!-- library -->
+            <div class="library">
+                <div class="flex navigationDiv">
+                    <img src="library.svg" alt="" />
+                    <p>Your library</p>
+                </div>
+                <div class="albumContainer">
+                    <div class="albumDiv flex">
+                        <div class="flex albumInfo">
+                            <img src="songs/Playlist1/cover.jpg" alt="" class="cover" />
+                            <div class="flex albumTxt">
+                                <h4>My Trible Mind</h4>
+                                <p>Talha Anjum</p>
+                            </div>
+                        </div>
+                        <div class="play flex">
+                            <img src="play.svg" alt="Play" />
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- right Div -->
+        <div class="rightBox">
+            <!-- header -->
+            <div class="header flex">
+                <div class="flex headerInfo">
+                    <div class="leftBoxHamburger">
+                        <img src="leftBox.svg" alt="" />
+                    </div>
+                    <div class="headerIcon">
+                        <img src="music.svg" alt="" />
+                    </div>
+                    <h2>Musify</h2>
+                </div>
+                <p>Show All</p>
+            </div>
+            <div class="cardContainer flex">
+                <!-- <div class="card flex">
+                    <img src="Album/1.jpg" alt="" class="cardCover" />
+                    <div class="cardInfo flex">
+                        <h2>My Trible Mind</h2>
+                        <p>Talha Anjum</p>
+                    </div>
+                    <div class="cardBtn flex">
+                        <img src="play.svg" alt="" />
+                    </div>
+                </div>-->
+               
+
+            </div>
+            <!-- Album Container -->
+            <div class="currentAlbumContainer flex hidden">
+                <!-- Album Header -->
+                <div class="albumHeader flex">
+                    <img src="songs/Playlist1/cover.jpg" alt="" class="albumcover" />
+                    <div class="albumInfo">
+                        <h2>My Tribe Mind</h2>
+                        <p>Talha Anjum</p>
+                    </div>
+                </div>
+                <div class="albumSongs flex">
+                    <div class="song flex">
+                        <div class="flex curentInfo">
+                            <p>1</p>
+                            <div>
+                                <h2>4Am in Karachi</h2>
+                                <p>Talha Anjum</p>
+                            </div>
+                        </div>
+                        <div class="songPlay flex">
+                            <img src="play.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="song flex">
+                        <div class="flex curentInfo">
+                            <p>2</p>
+                            <div>
+                                <h2>MTDT</h2>
+                                <p>Talha Anjum</p>
+                            </div>
+                        </div>
+                        <div class="songPlay flex">
+                            <img src="play.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="song flex">
+                        <div class="flex curentInfo">
+                            <p>3</p>
+                            <div>
+                                <h2>Channa ve</h2>
+                                <p>Talha Anjum</p>
+                            </div>
+                        </div>
+                        <div class="songPlay flex">
+                            <img src="play.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lyricsBox hidden">
+            <!-- header -->
+            <div class="header flex">
+                <h2>Lyrics</h2>
+            </div>
+            <div class="lyricsContainer">
+<p>Working on it...</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Playbar Container -->
+    <div class="playBox flex">
+        <!-- SOng Name and Cover Photo -->
+        <div class="songInfo flex">
+            <img src="songs/Playlist1/cover.jpg" alt="Song" class="currentSongImg" />
+            <div class="info flex">
+                <h2>Channa ve</h2>
+                <p>Talha Anjum</p>
+            </div>
+        </div>
+        <!-- Buttons and Seek bar -->
+        <div class="Actions flex">
+            <div class="Playbuttons flex">
+                <img src="pre.svg" alt="" id="pre" />
+                <img src="play1.svg" alt="" id="play" />
+                <img src="nex.svg" alt="" id="nex" />
+            </div>
+            <div class="seekBar flex">
+                <p id="currentTime">00:00</p>
+                <!-- <div class="track">
+                    <div class="circle"></div>
+                </div> -->
+                <input type="range" name="" id="seekBar" value="0" />
+                <p id="durationTime">00:00</p>
+            </div>
+        </div>
+        <!-- Volume -->
+        <div class="volume flex">
+            <img src="lyrics.png" alt="" id="lyrics" />
+            <img src="volume.svg" alt="" id="volume" />
+            <input type="range" name="" id="volBar" />
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
